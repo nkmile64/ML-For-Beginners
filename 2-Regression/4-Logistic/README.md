@@ -65,7 +65,7 @@ Logistic regression will give more accurate results if you use more data; our sm
 
 [![ML for beginners - Data Analysis and Preparation for Logistic Regression](https://img.youtube.com/vi/B2X4H9vcXTs/0.jpg)](https://youtu.be/B2X4H9vcXTs "ML for beginners - Data Analysis and Preparation for Logistic Regression")
 
-> 🎥 Click the image above for a short video overview of preparing data for linear regression
+> 🎥 Click the image above for a short video overview of preparing data for logistic regression
 
 ✅ Think about the types of data that would lend themselves well to logistic regression
 
@@ -306,10 +306,10 @@ In Scikit-learn, confusion matrices Rows (axis 0) are actual labels and columns 
 
 What's going on here? Let's say our model is asked to classify pumpkins between two binary categories, category 'white' and category 'not-white'.
 
-- If your model predicts a pumpkin as not white and it belongs to category 'not-white' in reality we call it a true negative, shown by the top left number.
-- If your model predicts a pumpkin as white and it belongs to category 'not-white' in reality we call it a false negative, shown by the bottom left number. 
-- If your model predicts a pumpkin as not white and it belongs to category 'white' in reality we call it a false positive, shown by the top right number. 
-- If your model predicts a pumpkin as white and it belongs to category 'white' in reality we call it a true positive, shown by the bottom right number.
+- If your model predicts a pumpkin as not white and it belongs to category 'not-white' in reality we call it a true negative **(TN)**, shown by the top left number.
+- If your model predicts a pumpkin as not white but it belongs to category 'white' in reality we call it a false negative **(FN)**, shown by the bottom left number. 
+- If your model predicts a pumpkin as white and it belongs to category 'not-white' in reality we call it a false positive **(FP)**, shown by the top right number. 
+- If your model predicts a pumpkin as white and it belongs to category 'white' in reality we call it a true positive **(TP)**, shown by the bottom right number.
 
 As you might have guessed it's preferable to have a larger number of true positives and true negatives and a lower number of false positives and false negatives, which implies that the model performs better.
 
