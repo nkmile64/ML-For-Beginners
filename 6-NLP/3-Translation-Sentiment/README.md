@@ -55,15 +55,20 @@ If an ML model has enough human translations to build a model on, it can improve
 
 ### Exercise - translation
 
-You can use `TextBlob` to translate sentences. Try the famous first line of **Pride and Prejudice**:
+You can use `TextBlob` and `googletranslate` to translate sentences. Try the famous first line of **Pride and Prejudice**:
 
 ```python
 from textblob import TextBlob
+from googletrans import Translator
 
 blob = TextBlob(
     "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife!"
 )
-print(blob.translate(to="fr"))
+
+# Use googletrans for translation
+translator = Translator()
+translated = translator.translate(blob.raw, src="en", dest="fr")
+print(translated.text)
 
 ```
 
